@@ -1,0 +1,17 @@
+{
+  "name": "chatbox",
+  "version": "1.0.0",
+  "description": "SnapChat Assistant",
+  "main": "index.js",
+  "scripts": {
+    "predev": "npx kill-port 5173 3001",
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
